@@ -1,0 +1,14 @@
+Proceso SALARIO_BRUTO_Y_SALARIO_NETO
+	definir HT,SN,SB,IH como entero;
+	Para SN<-1 Hasta 100 Con Paso 1 Hacer
+		escribir ("ingrese horas trabajadas")
+		leer HT
+		escribir ("ingrese el precio por horas")
+		leer IH
+		SB<-HT*IH
+		SN<-SB-(SB*0.13)
+		escribir ("EL SALARIO BRUTO ES:"),SB
+		escribir ("EL SALARIO NETO ES:"),SN
+	Fin Para
+	
+FinProceso
