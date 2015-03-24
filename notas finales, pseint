@@ -1,0 +1,20 @@
+Proceso NOTAS_FINALES
+    DEFINIR A,B,C,D,E,F,G,H,I,J COMO ENTERO
+	Para j<-1 Hasta 100 Con Paso 1 Hacer
+		escribir ("ingrese la nota practica");
+		leer A;
+		escribir ("ingrese la nota del parcial 1");
+		leer B;
+		escribir ("ingrese la nota del parcial 2");
+		leer C;
+		escribir ("ingrese la nota del parcial 3");
+		leer D;
+		escribir ("ingrese la nota final");
+		leer E;
+		F<-A*0.2;
+		G<-(B+C+D)/3;
+		H<-G*0.4;
+		I<-E*0.4;
+		J<-F+H+I;
+	Fin Para
+FinProceso
