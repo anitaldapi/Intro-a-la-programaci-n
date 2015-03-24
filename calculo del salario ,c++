@@ -1,0 +1,22 @@
+// CALCULO DEL SALARIO BRUTO Y NETO.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+usin gnamespace std;
+void main()
+	float SN,SB,HT,IH;
+	cin>>N
+	for (SN=1,SN>N)
+	cout<<J;
+	cout<<"ingrese horas trabajadas";
+	cin>>HT
+	cout<<"ingrese el precio por horas";
+	cin>>IH
+    SB=HT*IH
+	SN=SB-(SB*0.13)
+	cout<<"EL SALARIO BRUTO ES;"<<SB;
+	cout<<"EL SALARIO NETO ES;"<<SN;
+	while (SN<=N)
+	getch ()
