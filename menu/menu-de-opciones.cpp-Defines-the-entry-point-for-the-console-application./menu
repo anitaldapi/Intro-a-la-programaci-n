@@ -1,0 +1,57 @@
+// menu de opciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main(){
+	int a,b,h,A,B,W,SB,ST,SN,l, opcion;
+	do{
+		cout<<"menu"<<endl;
+		cout<<"1.área de un cuadrado"<<endl;
+		cout<<"2.área de un triángulo"<<endl;
+		cout<<"3.cálculo del IVA"<<endl;
+		cout<<"4.salario neto"<<endl;
+			
+		cout<<"0.salir"<<endl;
+		cout<<"elige una opción:";
+		cin>>opcion;
+		switch (opcion){
+		  case 1:
+			cout<<"ingrese lado del cuadrado:";
+			cin>>a;
+			A=a*a;
+			cout<<"el área del cuadrado es:"<<A<<endl;
+			break;
+		  case 2:
+			cout<<"ingrese la base del tríángulo:";
+			cin>>b;
+			cout<<"ingrese la altura del triágulo:";
+			cin>>h;
+			B=b*h;
+			cout<<"el área del triangulo es:"<<B<<endl;
+			break;
+		  case 3:
+			cout<<"ingrese salario:";
+			cin>>W;
+			ST=W*0.13;
+			cout<<"el IVA es:"<<ST<<endl;
+			break;
+		  case 4:
+			cout<<"ingrese bruto:";
+			cin>>SB;
+			SN=SB-(SB*0.13);
+			cout<<"el salario neto es:"<<SN<<endl;
+			break;
+			case 0:cout<<"salir";break;
+			default: cout<<"opción inválida"<<endl;
+		}
+	}while (opcion !=0);
+	getch ();
+	system("cls");
+}
+
