@@ -1,0 +1,33 @@
+// practico6.cpp : Defines the entry point for the console application.
+//
+//librerias
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+//cuerpo principal
+
+void main()
+{
+	//declarar variables
+	float x;
+	int n, i, signo=1, s=0, fac, j;
+	cout<<"Ingrese el valor de X:";
+	cin>>x;
+	cout<<"Ingrese el valor de n:";
+	cin>>n;
+
+	for(i=1;i<=n;i=i+2)
+	{
+		fac=1;
+		for (j=1; j<=i;j++)
+		    fac=fac*j;
+		s=s+(signo*pow(x,i)/fac);
+		signo=-signo;
+	}
+	cout<<"La suma de la serie es:"<<s;
+	getch ();
+}
+
