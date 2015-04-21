@@ -1,0 +1,25 @@
+Proceso maximo_comun_multiplo
+	Escribir "Ingrese dos numeros: "
+	Leer a
+	Leer b
+	Si a<b Entonces
+		x<-a
+		w<-b
+	Sino
+		x<-b
+		w<-a
+	Fin Si
+	n<-1
+	i<-2
+	Repetir
+		si x%i=0 & y%i=0
+			Entonces
+			n<-n*i
+			x<-x/i
+			w<-w/i
+		Sino
+			i=i+1
+		FinSi
+	Hasta Que i>x
+	Escribir "el maximo comun multiplo es: ",n;
+FinProceso
