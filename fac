@@ -1,0 +1,32 @@
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+//prototipos
+
+float funcionpoten (float base,int exponente);
+ 
+//cuerpo principal
+
+void main ()
+{
+	float b,pot;
+	int e;
+	cout<<"ingrese base: ";
+	cin>>b;
+	cout<<"ingrese exponente: ";
+	cin>>e;
+	pot = funcionpoten (b,e);  //llamada de funcion que retorna
+	cout<<"la potencia de: "<<b<<"elevado a la  "<<e<<"es: "<<pot;
+	getch();
+}
+//declaracion o deficinicon de variables
+float funcionpoten (float base, int exponente)
+{
+	float x;
+	x=1; //Inicializacion de un acumulador de producto
+	for (int i=1; i<=exponente; i++)
+		x=x*base;  //acumulador de producto
+		return x;
+}
