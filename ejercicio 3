@@ -1,0 +1,42 @@
+// funcionsuma.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float funcionsuma (float potencia, int exponente);
+int fac(int n);
+void main ()
+{ 
+	float i;
+	int b,e,s,n;
+	cout<<"ingrese b: ";
+	cin<<b;
+	cout<<"ingrese e: ";
+	cin<<e;
+	s=0;
+	for (int i=1; i<=e; i++)
+		s=s+(potencia(b,i)/fac(i));
+	cout<<"la suma de la serie, dados b: "<<b<<"y e: "<<e<<"es: "<<suma;
+	getch ();
+}
+float potencia(float base, int exponente)
+{
+	float x;
+	int i;
+	x=1;
+	for (int i=1; i<=e; i++)
+	x=x*base;
+	return x;
+}
+int fac(int exponente)
+{
+	int e=1,j=1;
+	for (int j=1; j<=n; j++)
+	e=e*j;
+	return e;
+}
+
